@@ -69,21 +69,34 @@
 						<!-- Featured Post -->
 							<article class="post featured" style="display: flex;">
 								<div style="flex: 1;">
-								<header class="major">
-									<span class="date">Jan 1, 2024</span>
-									<h2><a>My Journey <br />
-									in short</a></h2>
-									<p>I have explored diverse avenues and embarked on various professional journeys in my pursuit of passion.<br />
-									Through these experiences, I have discovered my true calling within the realm of data.<br />
-									My journey in data has been a continuous quest for knowledge and expertise, and I remain committed to furthering my understanding and skills in this dynamic field.</p>
-								</header>
-								<ul class="actions special" style="text-align: center; margin-top: auto;">
-									<li><a href="#projects" class="button large" >My Projects</a></li>
-								</ul>
+									<header class="major">
+										<span class="date">Jan 1, 2024</span>
+										<h2><a>My Journey <br />in short</a></h2>
+										<p> I have explored diverse avenues and embarked on various professional journeys in my pursuit of passion. Through these experiences, I have discovered my true calling within the realm of data. My journey in data has been a continuous quest for knowledge and expertise, and I remain committed to furthering my understanding and skills in this dynamic field.</p>
+									</header>
+									<ul class="actions special" style="text-align: center; margin-top: auto;">
+										<li><a href="#projects" class="button large">My Projects</a></li>
+									</ul>
 								</div>
-								<a href="#" class="image main" style="max-width: 50%; height: 65%; margin-left: 20px;">
-								<img src="images/NerWED190.jpg" alt="" style="width: 100%; height: 100%;" />
+								<a href="images/NerWED190.jpg" class="image main" style="max-width: 50%; height: 65%; margin-left: 20px;" onclick="openFullScreen()">
+									<img src="images/NerWED190.jpg" alt="" style="width: 100%; height: 100%;" />
 								</a>
+							
+								<!-- JavaScript to open the image in full screen -->
+								<script>
+									function openFullScreen() {
+										var elem = document.querySelector('.image.main img');
+										if (elem.requestFullscreen) {
+											elem.requestFullscreen();
+										} else if (elem.mozRequestFullScreen) { /* Firefox */
+											elem.mozRequestFullScreen();
+										} else if (elem.webkitRequestFullscreen) { /* Chrome, Safari and Opera */
+											elem.webkitRequestFullscreen();
+										} else if (elem.msRequestFullscreen) { /* IE/Edge */
+											elem.msRequestFullscreen();
+										}
+									}
+								</script>
 							</article>
 
 
@@ -93,9 +106,9 @@
 									<header>
 										<span class="date">Mar 7, 2023</span>
 										<h2><a href="#">Diabetes Data<br />
-										ETL pipeline Cloud to BI Visualization</a></h2>
+										ETL pipeline <br /> Cloud to BI</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/grouped_diabetes.png" alt="" /></a>
+									<a class="image fit"><img src="images/grouped_diabetes.png" alt="" /></a>
 									<p>The Project includes exporting a diabetes csv file from Google Drive into AWS S3 Bucket, then it is visualized using Tableau Tool.</p>
 									<ul class="actions special">
 										<li><a href="diabetes_project.html" class="button">Full Story</a></li>
@@ -107,7 +120,7 @@
 										<h2><a href="#">Twitter API <br />
 										Data Analysis</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/twitter_logo.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/twitter_logo.jpg" alt="" /></a>
 									<p>Analysis of Twitter Data using Twitter API.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -119,7 +132,7 @@
 										<h2><a href="#">Meta API<br />
 										ETL Pipeline</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/meta_logo.png" alt="" /></a>
+									<a class="image fit"><img src="images/meta_logo.png" alt="" /></a>
 									<p>Analysis of Meta Data using FB & Instagram API.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -130,7 +143,7 @@
 										<span class="date">Mar 7, 2020</span>
 										<h2><a href="#">dbt project</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/dbt.jpg" alt="" /></a>
+									<a class="image fit"><img src="images/dbt.jpg" alt="" /></a>
 									<p>dbt project.</p>
 									<ul class="actions special">
 										<li><a href="#" class="button">Full Story</a></li>
@@ -221,7 +234,7 @@
 							</section>
 							<section>
 								<h3>Email</h3>
-								<p><a href="#">info@untitled.tld</a></p>
+								<p><a href="#">ahmed.mahmoud@deutschebahn.com</a></p>
 							</section>
 							<section>
 								<h3>Social</h3>
